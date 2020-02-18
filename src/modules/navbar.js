@@ -17,15 +17,19 @@ function navBar(nav) {
   navLinks.setAttribute('class', 'nav justify-content-around');
 
   const navHome = document.createElement('a');
+  navHome.setAttribute('id', 'home-link');
   navHome.innerHTML = 'HOME';
   navHome.onclick = () => { home(); };
   const navMenu = document.createElement('a');
+  navMenu.setAttribute('id', 'menu-link');
   navMenu.innerHTML = 'MENU'
   navMenu.onclick = () => { menu(); };
   const navRese = document.createElement('a');
+  navRese.setAttribute('id', 'reserve-link')
   navRese.innerHTML = 'RESERVE';
   navRese.onclick = () => { reserve(); };
   const navCont = document.createElement('a');
+  navCont.setAttribute('id', 'contact-link');
   navCont.innerHTML = 'CONTACT';
   navCont.onclick = () => { contact(); };
 
