@@ -33,4 +33,9 @@ html body nav .nav a:hover:after {
   width: 100%;
   left: 0;
 }
+
+html body nav .nav .active:after {
+  width: 100%;
+  left: 0;
+}
 /*# sourceMappingURL=style.css.map */

@@ -38,11 +38,14 @@ function navBar(nav) {
   navAr.forEach((item) => {
     const navItem = document.createElement('li');
     navItem.setAttribute('class', 'nav-item');
-    item.setAttribute('class', 'nav-link');
+    if (item === navHome) {
+      item.setAttribute('class', 'nav-link active');
+    } else {
+      item.setAttribute('class', 'nav-link');
+    }
     navItem.appendChild(item);
     navLinks.appendChild(navItem);
   });
-
   nav.appendChild(navLinks);
 }
 
