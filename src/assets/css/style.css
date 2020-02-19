@@ -6,6 +6,29 @@ html body {
   height: 100%;
 }
 
+html body form {
+  margin-top: 2rem;
+  border: 1px solid #ced4da;
+  border-radius: .75rem;
+  padding: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html body form input {
+  width: 70%;
+  border: 1px solid #ced4da;
+  border-top-right-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+}
+
+html body form span {
+  width: 100%;
+}
+
+html body form .input-group-prepend {
+  width: 30%;
+}
+
 html body #content {
   font-family: 'Caveat', cursive;
   height: 100%;
@@ -13,6 +36,11 @@ html body #content {
 
 html body #content p {
   font-size: 1.8rem;
+}
+
+html body #content .row {
+  -webkit-animation: fadein 1.5s;
+          animation: fadein 1.5s;
 }
 
 html body .home {
@@ -137,5 +165,28 @@ html body .reserve .image {
   background-size: cover;
   background-repeat: no-repeat;
   height: 700px;
+}
+
+html body .reserve .col-lg-5 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
