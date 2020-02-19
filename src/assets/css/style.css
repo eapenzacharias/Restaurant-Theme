@@ -12,7 +12,7 @@ html body #content {
 
 html body .home {
   height: 100%;
-  background-color: #292929;
+  background-color: #000000;
 }
 
 html body .home .col {
@@ -21,19 +21,36 @@ html body .home .col {
 
 html body .home .small-box,
 html body .home .large-box {
+  color: #fff;
   border: 5px solid #fff;
-  padding-left: 15px;
-  padding-right: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 1.5rem;
+  opacity: 0.8;
+  -webkit-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
+  padding: 35px 20px;
+}
+
+html body .home .small-box h1,
+html body .home .large-box h1 {
+  font-size: 3.5rem;
+}
+
+html body .home .small-box:hover,
+html body .home .large-box:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
 }
 
 html body .home .large-box {
   height: 700px;
-  background-color: #490000;
 }
 
 html body .home .small-box {
   height: 350px;
-  background-color: darkgreen;
 }
 
 html body nav .nav {
