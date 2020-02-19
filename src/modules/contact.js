@@ -1,25 +1,46 @@
 import setPage from "./setpage";
+import makeForm from './form';
 
 function contact() {
   const container = setPage('contact-link');
-  container.setAttribute('class', 'container reserve');
+  container.setAttribute('class', 'container contact');
   const row = document.createElement('div');
   row.setAttribute('class', 'row');
 
   const colOne = document.createElement('div');
-  colOne.setAttribute('class', 'd-none d-lg-block d-xl-block col-lg-4 image');
+  colOne.setAttribute('class', 'd-none d-lg-block d-xl-block col-lg-5 image');
   colOne.style.backgroundImage = "url('./img/contact.jpg')";
   const colTwo = document.createElement('div');
-  colTwo.setAttribute('class', 'col-12 col-lg-4 content');
-  const colThr = document.createElement('div');
-  colThr.setAttribute('class', 'col-12 col-lg-4 form');
+  colTwo.setAttribute('class', 'col-12 col-lg-7 content');
 
-  colTwo.innerHTML = 'two';
-  colThr.innerHTML = 'Three'
+  const textA = document.createElement('p');
+  textA.innerHTML = 'Lorem ipsum dolor sit amet, consectetur eget risus adipiscing elit. Suspendisse lobortis leo eget risus ultrices, nec euismod dui dapibus.';
+
+  const addr = document.createElement('p');
+  addr.setAttribute('class', 'address');
+  addr.innerHTML = 'Address</br>High Street - 321</br>Hannover, 30123';
+
+  const head = document.createElement('h1');
+
+  head.innerHTML = 'Contact Us!'
+
+  const formAr = [
+    ['Name', 'name', 'text'],
+    ['Phone', 'phone', 'tel'],
+    ['Email', 'mail', 'email'],
+    ['Message', 'message', 'text'],
+  ];
+
+  const form = makeForm('reserve-form', formAr);
+
+  colTwo.appendChild(head);
+  colTwo.appendChild(textA);
+  colTwo.appendChild(addr);
+  colTwo.appendChild(form);
 
   row.appendChild(colOne);
   row.appendChild(colTwo);
-  row.appendChild(colThr);
+
   container.appendChild(row);
 }
 

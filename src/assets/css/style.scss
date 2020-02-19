@@ -31,6 +31,16 @@ html {
         animation: fadein 1.5s;
       }
     }
+    .contact {
+      margin-top: 1.5rem;
+      .address {
+        text-align: center;
+      }
+      .col-lg-7 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+    }
     .home {
       height: 100%;
       background-color: #000000;

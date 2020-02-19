@@ -15,7 +15,7 @@ function reserve() {
   colTwo.setAttribute('class', 'col-12 col-lg-5');
 
   const textA = document.createElement('p');
-  textA.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lobortis leo eget risus ultrices, nec euismod dui dapibus. Pellentesque luctus non urna dapibus, commodo laoreet urna.'
+  textA.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lobortis leo eget risus ultrices, nec euismod dui dapibus. Pellentesque luctus non urna dapibus, commodo laoreet urna.';
 
   const formAr = [
     ['Name', 'name', 'text'],

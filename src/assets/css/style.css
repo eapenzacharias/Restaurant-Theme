@@ -43,6 +43,19 @@ html body #content .row {
           animation: fadein 1.5s;
 }
 
+html body .contact {
+  margin-top: 1.5rem;
+}
+
+html body .contact .address {
+  text-align: center;
+}
+
+html body .contact .col-lg-7 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 html body .home {
   height: 100%;
   background-color: #000000;
