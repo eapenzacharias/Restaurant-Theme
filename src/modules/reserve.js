@@ -23,11 +23,11 @@ function reserve() {
     ['Email', 'mail', 'email'],
     ['Seats', 'seats', 'number'],
     ['Date', 'date', 'date'],
-    ['Time', 'time', 'time']
+    ['Time', 'time', 'time'],
   ];
 
   const head = document.createElement('h1');
-  head.innerHTML = 'Reserve your Seat!'
+  head.innerHTML = 'Reserve your Seat!';
 
   const form = makeForm('reserve-form', formAr);
 

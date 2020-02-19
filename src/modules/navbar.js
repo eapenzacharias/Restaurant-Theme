@@ -22,10 +22,10 @@ function navBar(nav) {
   navHome.onclick = () => { home(); };
   const navMenu = document.createElement('a');
   navMenu.setAttribute('id', 'menu-link');
-  navMenu.innerHTML = 'MENU'
+  navMenu.innerHTML = 'MENU';
   navMenu.onclick = () => { menu(); };
   const navRese = document.createElement('a');
-  navRese.setAttribute('id', 'reserve-link')
+  navRese.setAttribute('id', 'reserve-link');
   navRese.innerHTML = 'RESERVE';
   navRese.onclick = () => { reserve(); };
   const navCont = document.createElement('a');

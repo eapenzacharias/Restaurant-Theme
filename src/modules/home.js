@@ -1,4 +1,4 @@
-import setPage from "./setpage";
+import setPage from './setpage';
 
 function home() {
   const container = setPage('home-link');
@@ -30,7 +30,7 @@ function home() {
   const cusine = document.createElement('h2');
   cusine.innerHTML = 'Cusine';
   const cusineD = document.createElement('p');
-  cusineD.innerHTML = "<ul><li>Italian</li><li>Chinese</li><li>French</li><li>Mexican</li></ul>";
+  cusineD.innerHTML = '<ul><li>Italian</li><li>Chinese</li><li>French</li><li>Mexican</li></ul>';
   colSmTop.appendChild(cusine);
   colSmTop.appendChild(cusineD);
 
@@ -40,7 +40,7 @@ function home() {
   const openHrs = document.createElement('h2');
   openHrs.innerHTML = 'Open Hours';
   const openHrsD = document.createElement('p');
-  openHrsD.innerHTML = "<ul><li>Mon - Fri  11.00AM to 11.00PM</li><li>Sat  3.00PM to 12.00PM</li><li>Sun  3.00PM to 10.00PM</li></ul>";
+  openHrsD.innerHTML = '<ul><li>Mon - Fri  11.00AM to 11.00PM</li><li>Sat  3.00PM to 12.00PM</li><li>Sun  3.00PM to 10.00PM</li></ul>';
   colSmBtm.appendChild(openHrs);
   colSmBtm.appendChild(openHrsD);
 

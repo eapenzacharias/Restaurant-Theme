@@ -1,4 +1,4 @@
-import setPage from "./setpage";
+import setPage from './setpage';
 
 async function fetchData() {
   const response = await fetch('./data/menu.json', { mode: 'cors' });
@@ -53,7 +53,7 @@ async function menu() {
   head.innerHTML = 'Menu';
   container.appendChild(head);
 
-  let menu = await fetchData();
+  const menu = await fetchData();
   menu.data.forEach(element => {
     container.appendChild(printMenu(element));
   });

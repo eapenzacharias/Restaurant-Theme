@@ -11,7 +11,8 @@ function makeForm(formID, formAr) {
     const span = document.createElement('span');
     span.setAttribute('class', 'input-group-text');
     span.setAttribute('id', `${item[1]}-input`);
-    span.innerHTML = item[0];
+    const name = item[0];
+    span.innerHTML = name;
     const textF = document.createElement('input');
     textF.outerHTML = `<input type="${item[2]}" class="form-control" aria-describedby="${item[1]}-input">`;
 

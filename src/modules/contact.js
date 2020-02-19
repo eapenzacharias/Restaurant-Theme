@@ -1,4 +1,4 @@
-import setPage from "./setpage";
+import setPage from './setpage';
 import makeForm from './form';
 
 function contact() {
@@ -22,7 +22,7 @@ function contact() {
 
   const head = document.createElement('h1');
 
-  head.innerHTML = 'Contact Us!'
+  head.innerHTML = 'Contact Us';
 
   const formAr = [
     ['Name', 'name', 'text'],

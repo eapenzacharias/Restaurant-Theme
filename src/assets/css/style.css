@@ -56,9 +56,17 @@ html body .contact .col-lg-7 {
   padding-right: 1.5rem;
 }
 
+html body .image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+
 html body .home {
   height: 100%;
   background-color: #000000;
+  margin-bottom: -1.5rem;
 }
 
 html body .home .col {
@@ -124,17 +132,29 @@ html body .menu i {
   margin: 0 2rem;
 }
 
-html body nav {
+html body .footer {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 1.5rem;
+  width: 100%;
+  background-color: #f8f9fa;
+}
+
+html body .footer a {
+  color: #848484;
+  font-size: 1.25rem;
+}
+
+html body .header {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-html body nav .nav {
+html body .header .nav {
   margin-top: 10px;
   min-width: 60%;
   text-align: center;
 }
 
-html body nav .nav a {
+html body .header .nav a {
   color: #221717;
   text-transform: uppercase;
   text-decoration: none;
@@ -145,7 +165,7 @@ html body nav .nav a {
   width: 140px;
 }
 
-html body nav .nav a:after {
+html body .header .nav a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -159,25 +179,18 @@ html body nav .nav a:after {
   width: 0;
 }
 
-html body nav .nav a:hover:after {
+html body .header .nav a:hover:after {
   width: 100%;
   left: 0;
 }
 
-html body nav .nav .active:after {
+html body .header .nav .active:after {
   width: 100%;
   left: 0;
 }
 
 html body .reserve .row {
   margin-top: 1.5rem;
-}
-
-html body .reserve .image {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 700px;
 }
 
 html body .reserve .col-lg-5 {
