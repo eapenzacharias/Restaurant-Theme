@@ -8,7 +8,7 @@ const nav = document.createElement('nav');
 nav.setAttribute('class', 'navbar navbar-expand-lg navbar-light bg-light flex-column');
 
 const container = document.createElement('div');
-container.setAttribute('class', 'container');
+container.setAttribute('class', 'container flex-grow-1');
 container.setAttribute('id', 'container');
 
 content.appendChild(nav);
