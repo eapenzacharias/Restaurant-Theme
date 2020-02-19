@@ -7,7 +7,12 @@ html body {
 }
 
 html body #content {
+  font-family: 'Caveat', cursive;
   height: 100%;
+}
+
+html body #content p {
+  font-size: 1.8rem;
 }
 
 html body .home {
@@ -51,6 +56,34 @@ html body .home .large-box {
 
 html body .home .small-box {
   height: 350px;
+}
+
+html body .menu h1 {
+  text-align: center;
+  margin: 3rem;
+  font-size: 3.5rem;
+}
+
+html body .menu h2 {
+  font-size: 3.5rem;
+  margin: 2rem 0 1.5rem 0;
+}
+
+html body .menu h3 {
+  font-size: 2.5rem;
+}
+
+html body .menu .price {
+  font-size: 2.5rem;
+}
+
+html body .menu i {
+  font-size: 2.8rem;
+  margin: 0 2rem;
+}
+
+html body nav {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 html body nav .nav {

@@ -2,7 +2,7 @@ import setPage from "./setpage";
 
 function home() {
   const container = setPage('home-link');
-
+  container.setAttribute('class', 'container');
   const mainRow = document.createElement('div');
   mainRow.setAttribute('class', 'row home');
 
