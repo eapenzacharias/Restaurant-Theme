@@ -33,14 +33,9 @@ function contact() {
 
   const form = makeForm('reserve-form', formAr);
 
-  colTwo.appendChild(head);
-  colTwo.appendChild(textA);
-  colTwo.appendChild(addr);
-  colTwo.appendChild(form);
+  colTwo.append(head, textA, addr, form);
 
-  row.appendChild(colOne);
-  row.appendChild(colTwo);
-
+  row.append(colOne, colTwo);
   container.appendChild(row);
 }
 

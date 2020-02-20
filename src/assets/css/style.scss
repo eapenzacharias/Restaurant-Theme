@@ -57,7 +57,7 @@ html {
       .small-box,
       .large-box {
         color: #fff;
-        border: 5px solid #fff;
+        border: 5px solid currentColor;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -120,6 +120,7 @@ html {
         min-width: 60%;
         text-align: center;
         a {
+          cursor: pointer;
           color: #221717;
           text-transform: uppercase;
           text-decoration: none;

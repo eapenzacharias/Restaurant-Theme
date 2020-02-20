@@ -76,7 +76,7 @@ html body .home .col {
 html body .home .small-box,
 html body .home .large-box {
   color: #fff;
-  border: 5px solid #fff;
+  border: 5px solid currentColor;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -155,6 +155,7 @@ html body .header .nav {
 }
 
 html body .header .nav a {
+  cursor: pointer;
   color: #221717;
   text-transform: uppercase;
   text-decoration: none;

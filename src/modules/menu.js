@@ -1,7 +1,7 @@
 import setPage from './setpage';
 
 async function fetchData() {
-  const response = await fetch('./data/menu.json', { mode: 'cors' });
+  const response = await fetch('./data/menu.json');
   const data = await response.json();
   return data;
 }

@@ -23,7 +23,7 @@ function makeForm(formID, formAr) {
   });
   const btn = document.createElement('button');
   btn.setAttribute('class', 'btn btn-outline-secondary');
-  btn.innerHTML = 'Submit';
+  btn.textContent = 'Submit';
   form.appendChild(btn);
   return form;
 }
