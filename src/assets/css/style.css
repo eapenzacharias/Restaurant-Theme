@@ -1,0 +1,219 @@
+html {
+  height: 100%;
+}
+
+html body {
+  height: 100%;
+}
+
+html body form {
+  margin-top: 2rem;
+  border: 1px solid #ced4da;
+  border-radius: .75rem;
+  padding: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html body form input {
+  width: 70%;
+  border: 1px solid #ced4da;
+  border-top-right-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+}
+
+html body form span {
+  width: 100%;
+}
+
+html body form .input-group-prepend {
+  width: 30%;
+}
+
+html body #content {
+  font-family: 'Caveat', cursive;
+  height: 100%;
+}
+
+html body #content p {
+  font-size: 1.8rem;
+}
+
+html body #content .row {
+  -webkit-animation: fadein 1.5s;
+          animation: fadein 1.5s;
+}
+
+html body .contact {
+  margin-top: 1.5rem;
+}
+
+html body .contact .address {
+  text-align: center;
+}
+
+html body .contact .col-lg-7 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+html body .image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+
+html body .home {
+  height: 100%;
+  background-color: #000000;
+  margin-bottom: -1.5rem;
+}
+
+html body .home .col {
+  padding: 0;
+}
+
+html body .home .small-box,
+html body .home .large-box {
+  color: #fff;
+  border: 5px solid currentColor;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 1.5rem;
+  opacity: 0.7;
+  -webkit-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
+  padding: 35px 20px;
+}
+
+html body .home .small-box h1,
+html body .home .large-box h1 {
+  font-size: 3.5rem;
+}
+
+html body .home .small-box:hover,
+html body .home .large-box:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
+}
+
+html body .home .large-box {
+  height: 700px;
+  overflow: auto;
+}
+
+html body .home .small-box {
+  height: 350px;
+}
+
+html body .menu h1 {
+  text-align: center;
+  margin-top: 2.5rem;
+  font-size: 4rem;
+}
+
+html body .menu h2 {
+  font-size: 3.5rem;
+  margin: 2rem 0 1.5rem 0;
+}
+
+html body .menu h3 {
+  font-size: 2.5rem;
+}
+
+html body .menu .price {
+  font-size: 2.5rem;
+}
+
+html body .menu i {
+  font-size: 2.8rem;
+  margin: 0 2rem;
+}
+
+html body .footer {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 1.5rem;
+  width: 100%;
+  background-color: #f8f9fa;
+}
+
+html body .footer a {
+  color: #848484;
+  font-size: 1.25rem;
+}
+
+html body .header {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html body .header .nav {
+  margin-top: 10px;
+  min-width: 60%;
+  text-align: center;
+}
+
+html body .header .nav a {
+  cursor: pointer;
+  color: #221717;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+  width: 140px;
+}
+
+html body .header .nav a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #221717;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+html body .header .nav a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+html body .header .nav .active:after {
+  width: 100%;
+  left: 0;
+}
+
+html body .reserve .row {
+  margin-top: 1.5rem;
+}
+
+html body .reserve .col-lg-5 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
