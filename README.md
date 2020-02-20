@@ -9,7 +9,7 @@ This is a project from the JavaScript part of the main curriculum for [Microvers
 
 #### [Assignment link](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page)
 
-#### [View live in browser](#)
+#### [View live in browser](https://cdn.statically.io/gh/eapenzacharias/Restaurant-Theme/da9a312c/dist/index.html)
 
 ### Author
  #### [@eapenzacharias](https://github.com/eapenzacharias)
