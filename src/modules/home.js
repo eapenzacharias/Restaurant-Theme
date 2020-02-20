@@ -13,7 +13,7 @@ function home() {
   const head = document.createElement('h1');
   head.innerHTML = 'Forkful';
   const about = document.createElement('p');
-  about.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lobortis leo eget risus ultrices, nec euismod dui dapibus. Pellentesque eu nisl at ipsum sollicitudin suscipit.</br>Nullam ante urna, luctus non urna dapibus, commodo laoreet urna. Praesent in vehicula sem, vel posuere nunc.</br></br>Duis id nisi sed lectus tempor euismod non sed magna. Sed gravida est et nisi rutrum mollis. Donec sit amet nunc nunc. Praesent ut vestibulum justo, vitae rhoncus odio.  Pellentesque eu nisl at ipsum sollicitudin suscipit.</br></br>Maecenas vestibulum erat non dui vulputate auctor.';
+  about.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lobortis leo eget risus ultrices, nec euismod dui dapibus. Pellentesque eu nisl at ipsum sollicitudin suscipit.</br>Nullam ante urna, luctus non urna dapibus, commodo laoreet urna.</br></br>Duis id nisi sed lectus tempor euismod non sed magna. Sed gravida est et nisi rutrum mollis. Donec sit amet nunc nunc. Praesent ut vestibulum justo, vitae rhoncus odio.  Pellentesque eu nisl at ipsum sollicitudin suscipit.</br></br>Maecenas vestibulum erat non dui vulputate auctor.';
   const image = new Image(236, 101);
   image.src = './img/sign.png';
   colLargeOne.appendChild(head);

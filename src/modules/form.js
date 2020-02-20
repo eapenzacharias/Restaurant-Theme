@@ -14,7 +14,7 @@ function makeForm(formID, formAr) {
     const name = item[0];
     span.innerHTML = name;
     const textF = document.createElement('input');
-    textF.outerHTML = `<input type="${item[2]}" class="form-control" aria-describedby="${item[1]}-input">`;
+    textF.innerHTML = `<input type="${item[2]}" class="form-control" aria-describedby="${item[1]}-input">`;
 
     prependDiv.appendChild(span);
     group.appendChild(prependDiv);
