@@ -1,4 +1,7 @@
 # Restaurant-Theme
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/eapenzacharias/Restaurant-Theme.svg)](https://greenkeeper.io/)
+
 An easy to use Restaurant Theme built on JavaScript, HTML5 and Saas
 
 * Responsive & Clean Design
