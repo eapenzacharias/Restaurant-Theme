@@ -1,30 +1,23 @@
-name: Build and Deploy
-on:
-  push:
-    branches:
-      - master
+name: Node.js CI
+
+on: [push]
+
 jobs:
-  build-and-deploy:
+  build:
+
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [8.x, 10.x, 12.x]
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@master
-      - name: Setup Node
-        uses: actions/setup-node@v1
-        with:
-          node-version: '10.x'
-      - name: Cache dependencies
-        uses: actions/cache@v1
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-      - run: npm ci
-      - run: npm run build
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v2.5.0
-        env:
-          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: ./dist
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm install
+    - run: npm run build --if-present
+    - name: GitHub Pages Deploy
+      uses: maxheld83/ghpages@v0.2.1
