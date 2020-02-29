@@ -1,12 +1,6 @@
 import setPage from './setpage';
 import makeForm from './form';
-
-function makeColOne() {
-  const colOne = document.createElement('div');
-  colOne.setAttribute('class', 'd-none d-lg-block d-xl-block col-lg-5 image');
-  colOne.style.backgroundImage = "url('./img/contact.jpg')";
-  return colOne;
-}
+import makeCol from './imgCol';
 
 function contact() {
   const container = setPage('contact-link');
@@ -39,7 +33,7 @@ function contact() {
 
   colTwo.append(head, textA, addr, form);
 
-  row.append(makeColOne(), colTwo);
+  row.append(makeCol('d-none d-lg-block d-xl-block col-lg-5 image', './img/contact.jpg'), colTwo);
   container.appendChild(row);
 }
 
