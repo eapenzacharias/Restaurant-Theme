@@ -18,7 +18,7 @@ An easy to use Restaurant Theme built on JavaScript, HTML5 and Saas
 * Understanding of the benefits of modularized code
 * The project was completed using JavaScript, HTML and Saas.
 
-## [View live in browser](https://eapenzacharias.github.io/Restaurant-Theme/index.html)
+## [View live in browser](https://eapenzacharias.github.io/Restaurant-Theme)
 
 ## Author
 
