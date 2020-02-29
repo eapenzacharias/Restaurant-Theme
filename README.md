@@ -3,6 +3,8 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/eapenzacharias/Restaurant-Theme/badge.svg)](https://snyk.io/test/github/eapenzacharias/Restaurant-Theme)
 [![Maintainability](https://api.codeclimate.com/v1/badges/de82ec194405f7059265/maintainability)](https://codeclimate.com/github/eapenzacharias/Restaurant-Theme/maintainability)
 [![Greenkeeper badge](https://badges.greenkeeper.io/eapenzacharias/Restaurant-Theme.svg)](https://greenkeeper.io/)
+[![Webpack badge](https://img.shields.io/badge/webpack-%5E4.41.6-blue.svg)](https://webpack.js.org/)
+
 
 An easy to use Restaurant Theme built on JavaScript, HTML5 and Saas
 
