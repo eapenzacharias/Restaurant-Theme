@@ -6,20 +6,7 @@ async function fetchData() {
   return data;
 }
 
-function printMenu(type) {
-  const menuRow = document.createElement('div');
-  menuRow.setAttribute('class', 'row menu-type');
-  const menuCol = document.createElement('div');
-  menuCol.setAttribute('class', 'col-12');
-
-  const head = document.createElement('h2');
-  const icon = document.createElement('i');
-  icon.setAttribute('class', `${type.icon}`);
-  head.innerHTML = `${type.type}`;
-  head.appendChild(icon);
-
-  menuCol.appendChild(head);
-
+function listItems(type, menuCol) {
   type.items.forEach(i => {
     const itemRow = document.createElement('div');
     itemRow.setAttribute('class', 'row');
@@ -40,8 +27,24 @@ function printMenu(type) {
     itemRow.appendChild(priceCol);
     menuCol.appendChild(itemRow);
   });
+  return menuCol;
+}
 
-  menuRow.appendChild(menuCol);
+function printMenu(type) {
+  const menuRow = document.createElement('div');
+  menuRow.setAttribute('class', 'row menu-type');
+  const menuCol = document.createElement('div');
+  menuCol.setAttribute('class', 'col-12');
+
+  const head = document.createElement('h2');
+  const icon = document.createElement('i');
+  icon.setAttribute('class', `${type.icon}`);
+  head.innerHTML = `${type.type}`;
+  head.appendChild(icon);
+
+  menuCol.appendChild(head);
+
+  menuRow.appendChild(listItems(type, menuCol));
   return menuRow;
 }
 

@@ -1,11 +1,6 @@
 import setPage from './setpage';
 
-function home() {
-  const container = setPage('home-link');
-  container.setAttribute('class', 'container-fluid');
-  const mainRow = document.createElement('div');
-  mainRow.setAttribute('class', 'row home');
-
+function largeOne() {
   const colLargeOne = document.createElement('div');
   colLargeOne.setAttribute('class', 'col col-12 col-lg-6 large-box');
   colLargeOne.style.backgroundImage = "url('./img/about.jpg')";
@@ -19,11 +14,10 @@ function home() {
   colLargeOne.appendChild(head);
   colLargeOne.appendChild(about);
   colLargeOne.appendChild(image);
+  return colLargeOne;
+}
 
-  const colLargeTwo = document.createElement('div');
-  colLargeTwo.setAttribute('class', 'col col-12 col-lg-6');
-
-
+function smTop() {
   const colSmTop = document.createElement('div');
   colSmTop.setAttribute('class', 'col col-12 small-box');
   colSmTop.style.backgroundImage = "url('./img/cusine.jpg')";
@@ -33,7 +27,10 @@ function home() {
   cusineD.innerHTML = '<ul><li>Italian</li><li>Chinese</li><li>French</li><li>Mexican</li></ul>';
   colSmTop.appendChild(cusine);
   colSmTop.appendChild(cusineD);
+  return colSmTop;
+}
 
+function smBtm() {
   const colSmBtm = document.createElement('div');
   colSmBtm.setAttribute('class', 'col col-12 small-box');
   colSmBtm.style.backgroundImage = "url('./img/hours.jpg')";
@@ -43,10 +40,21 @@ function home() {
   openHrsD.innerHTML = '<ul><li>Mon - Fri  11.00AM to 11.00PM</li><li>Sat  3.00PM to 12.00PM</li><li>Sun  3.00PM to 10.00PM</li></ul>';
   colSmBtm.appendChild(openHrs);
   colSmBtm.appendChild(openHrsD);
+  return colSmBtm;
+}
 
-  mainRow.appendChild(colLargeOne);
-  colLargeTwo.appendChild(colSmTop);
-  colLargeTwo.appendChild(colSmBtm);
+function home() {
+  const container = setPage('home-link');
+  container.setAttribute('class', 'container-fluid');
+  const mainRow = document.createElement('div');
+  mainRow.setAttribute('class', 'row home');
+
+  const colLargeTwo = document.createElement('div');
+  colLargeTwo.setAttribute('class', 'col col-12 col-lg-6');
+
+  mainRow.appendChild(largeOne());
+  colLargeTwo.appendChild(smTop());
+  colLargeTwo.appendChild(smBtm());
   mainRow.appendChild(colLargeTwo);
   container.appendChild(mainRow);
 }
