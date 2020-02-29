@@ -17,30 +17,17 @@ function largeOne() {
   return colLargeOne;
 }
 
-function smTop() {
-  const colSmTop = document.createElement('div');
-  colSmTop.setAttribute('class', 'col col-12 small-box');
-  colSmTop.style.backgroundImage = "url('./img/cusine.jpg')";
-  const cusine = document.createElement('h2');
-  cusine.innerHTML = 'Cusine';
-  const cusineD = document.createElement('p');
-  cusineD.innerHTML = '<ul><li>Italian</li><li>Chinese</li><li>French</li><li>Mexican</li></ul>';
-  colSmTop.appendChild(cusine);
-  colSmTop.appendChild(cusineD);
-  return colSmTop;
-}
-
-function smBtm() {
-  const colSmBtm = document.createElement('div');
-  colSmBtm.setAttribute('class', 'col col-12 small-box');
-  colSmBtm.style.backgroundImage = "url('./img/hours.jpg')";
-  const openHrs = document.createElement('h2');
-  openHrs.innerHTML = 'Open Hours';
-  const openHrsD = document.createElement('p');
-  openHrsD.innerHTML = '<ul><li>Mon - Fri  11.00AM to 11.00PM</li><li>Sat  3.00PM to 12.00PM</li><li>Sun  3.00PM to 10.00PM</li></ul>';
-  colSmBtm.appendChild(openHrs);
-  colSmBtm.appendChild(openHrsD);
-  return colSmBtm;
+function makeSmCol(bgUrl, hText, dHTML) {
+  const colSm = document.createElement('div');
+  colSm.setAttribute('class', 'col col-12 small-box');
+  colSm.style.backgroundImage = `url('${bgUrl}')`;
+  const head = document.createElement('h2');
+  head.innerText = hText;
+  const desc = document.createElement('p');
+  desc.innerHTML = `${dHTML}`;
+  colSm.appendChild(head);
+  colSm.appendChild(desc);
+  return colSm;
 }
 
 function home() {
@@ -53,8 +40,8 @@ function home() {
   colLargeTwo.setAttribute('class', 'col col-12 col-lg-6');
 
   mainRow.appendChild(largeOne());
-  colLargeTwo.appendChild(smTop());
-  colLargeTwo.appendChild(smBtm());
+  colLargeTwo.appendChild(makeSmCol('./img/cusine.jpg', 'Cusine', '<ul><li>Italian</li><li>Chinese</li><li>French</li><li>Mexican</li></ul>'));
+  colLargeTwo.appendChild(makeSmCol('./img/hours.jpg', 'Open Hours', '<ul><li>Mon - Fri  11.00AM to 11.00PM</li><li>Sat  3.00PM to 12.00PM</li><li>Sun  3.00PM to 10.00PM</li></ul>'));
   mainRow.appendChild(colLargeTwo);
   container.appendChild(mainRow);
 }

@@ -1,12 +1,6 @@
 import setPage from './setpage';
 import makeForm from './form';
-
-function makeColOne() {
-  const colOne = document.createElement('div');
-  colOne.setAttribute('class', 'd-none d-lg-block d-xl-block col-lg-7 image');
-  colOne.style.backgroundImage = "url('./img/tables.jpg')";
-  return colOne;
-}
+import makeCol from './imgCol';
 
 function textArea() {
   const textA = document.createElement('p');
@@ -40,7 +34,7 @@ function reserve() {
   colTwo.appendChild(head);
   colTwo.appendChild(textArea());
   colTwo.appendChild(form);
-  row.appendChild(makeColOne());
+  row.appendChild(makeCol('d-none d-lg-block d-xl-block col-lg-7 image', './img/tables.jpg'));
   row.appendChild(colTwo);
   container.appendChild(row);
 }
